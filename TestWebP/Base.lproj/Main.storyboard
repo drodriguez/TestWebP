@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TWPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmC-V7-5Fv">
+                                <rect key="frame" x="140" y="244" width="41" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWt-rw-14w">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="WebP">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="testWebP:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Ps-Hu-5Yx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0w-iN-8Vz">
+                                        <rect key="frame" x="0.0" y="50" width="41" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="PNG">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="testPNG:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J6D-oX-hwN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XWt-rw-14w" firstAttribute="leading" secondItem="SmC-V7-5Fv" secondAttribute="leading" id="4iv-cQ-0h2"/>
+                                    <constraint firstItem="t0w-iN-8Vz" firstAttribute="leading" secondItem="SmC-V7-5Fv" secondAttribute="leading" id="FTw-Vl-GNR"/>
+                                    <constraint firstItem="XWt-rw-14w" firstAttribute="top" secondItem="SmC-V7-5Fv" secondAttribute="top" id="FjT-cd-DWc"/>
+                                    <constraint firstAttribute="bottom" secondItem="t0w-iN-8Vz" secondAttribute="bottom" id="NTj-By-siH"/>
+                                    <constraint firstAttribute="trailing" secondItem="XWt-rw-14w" secondAttribute="trailing" id="jjT-Nd-b27"/>
+                                    <constraint firstItem="t0w-iN-8Vz" firstAttribute="top" secondItem="XWt-rw-14w" secondAttribute="bottom" constant="20" id="pBR-AN-gSk"/>
+                                    <constraint firstAttribute="trailing" secondItem="t0w-iN-8Vz" secondAttribute="trailing" id="ueH-KZ-lna"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="SmC-V7-5Fv" secondAttribute="centerY" id="GBh-Gn-Uxs"/>
+                            <constraint firstAttribute="centerX" secondItem="SmC-V7-5Fv" secondAttribute="centerX" id="lYF-n8-xtp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

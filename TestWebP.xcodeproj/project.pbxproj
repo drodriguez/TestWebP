@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65EC52F119B488090088ABE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC52F019B488090088ABE1 /* Foundation.framework */; };
+		65EC52F319B488090088ABE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC52F219B488090088ABE1 /* CoreGraphics.framework */; };
+		65EC52F519B488090088ABE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC52F419B488090088ABE1 /* UIKit.framework */; };
+		65EC52FB19B488090088ABE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65EC52F919B488090088ABE1 /* InfoPlist.strings */; };
+		65EC52FD19B488090088ABE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EC52FC19B488090088ABE1 /* main.m */; };
+		65EC530119B488090088ABE1 /* TWPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EC530019B488090088ABE1 /* TWPAppDelegate.m */; };
+		65EC530419B488090088ABE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EC530219B488090088ABE1 /* Main.storyboard */; };
+		65EC530719B488090088ABE1 /* TWPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EC530619B488090088ABE1 /* TWPViewController.m */; };
+		65EC530919B488090088ABE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EC530819B488090088ABE1 /* Images.xcassets */; };
+		65EC542F19B4B5F60088ABE1 /* libSTWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC542019B4B5DD0088ABE1 /* libSTWebP.a */; };
+		65EC543019B4B5F60088ABE1 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC542C19B4B5DD0088ABE1 /* libwebp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65EC541F19B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CFC2D21172BD74300893638;
+			remoteInfo = "STWebP-iOS";
+		};
+		65EC542119B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CE5C690172C83EF00CB54A5;
+			remoteInfo = "STWebP-mac";
+		};
+		65EC542319B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C0EC14618A2426100C47CC0;
+			remoteInfo = "STWebPTests-iOS";
+		};
+		65EC542519B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C0EC12D18A2279200C47CC0;
+			remoteInfo = "STWebPTests-mac";
+		};
+		65EC542719B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C605BAF1727CEE500CE8626;
+			remoteInfo = "STWebPDecoderExample-iOS";
+		};
+		65EC542919B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CB9CC30172C86E10054BC07;
+			remoteInfo = "STWebPDecoderExample-mac";
+		};
+		65EC542B19B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CBA51AF189BC15400529073;
+			remoteInfo = "libwebp-iOS";
+		};
+		65EC542D19B4B5DD0088ABE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CBA51D6189BC25100529073;
+			remoteInfo = "libwebp-mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65EC52ED19B488090088ABE1 /* TestWebP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EC52F019B488090088ABE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65EC52F219B488090088ABE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65EC52F419B488090088ABE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65EC52F819B488090088ABE1 /* TestWebP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestWebP-Info.plist"; sourceTree = "<group>"; };
+		65EC52FA19B488090088ABE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65EC52FC19B488090088ABE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65EC52FE19B488090088ABE1 /* TestWebP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestWebP-Prefix.pch"; sourceTree = "<group>"; };
+		65EC52FF19B488090088ABE1 /* TWPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWPAppDelegate.h; sourceTree = "<group>"; };
+		65EC530019B488090088ABE1 /* TWPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWPAppDelegate.m; sourceTree = "<group>"; };
+		65EC530319B488090088ABE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65EC530519B488090088ABE1 /* TWPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWPViewController.h; sourceTree = "<group>"; };
+		65EC530619B488090088ABE1 /* TWPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWPViewController.m; sourceTree = "<group>"; };
+		65EC530819B488090088ABE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65EC530F19B4880A0088ABE1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STWebP.xcodeproj; path = Vendor/STWebPDecoder/STWebP.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65EC52EA19B488090088ABE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EC542F19B4B5F60088ABE1 /* libSTWebP.a in Frameworks */,
+				65EC543019B4B5F60088ABE1 /* libwebp.a in Frameworks */,
+				65EC52F319B488090088ABE1 /* CoreGraphics.framework in Frameworks */,
+				65EC52F519B488090088ABE1 /* UIKit.framework in Frameworks */,
+				65EC52F119B488090088ABE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65EC52E419B488090088ABE1 = {
+			isa = PBXGroup;
+			children = (
+				65EC52F619B488090088ABE1 /* TestWebP */,
+				65EC52EF19B488090088ABE1 /* Frameworks */,
+				65EC52EE19B488090088ABE1 /* Products */,
+				65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		65EC52EE19B488090088ABE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65EC52ED19B488090088ABE1 /* TestWebP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65EC52EF19B488090088ABE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65EC52F019B488090088ABE1 /* Foundation.framework */,
+				65EC52F219B488090088ABE1 /* CoreGraphics.framework */,
+				65EC52F419B488090088ABE1 /* UIKit.framework */,
+				65EC530F19B4880A0088ABE1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65EC52F619B488090088ABE1 /* TestWebP */ = {
+			isa = PBXGroup;
+			children = (
+				65EC52FF19B488090088ABE1 /* TWPAppDelegate.h */,
+				65EC530019B488090088ABE1 /* TWPAppDelegate.m */,
+				65EC530219B488090088ABE1 /* Main.storyboard */,
+				65EC530519B488090088ABE1 /* TWPViewController.h */,
+				65EC530619B488090088ABE1 /* TWPViewController.m */,
+				65EC530819B488090088ABE1 /* Images.xcassets */,
+				65EC52F719B488090088ABE1 /* Supporting Files */,
+			);
+			path = TestWebP;
+			sourceTree = "<group>";
+		};
+		65EC52F719B488090088ABE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65EC52F819B488090088ABE1 /* TestWebP-Info.plist */,
+				65EC52F919B488090088ABE1 /* InfoPlist.strings */,
+				65EC52FC19B488090088ABE1 /* main.m */,
+				65EC52FE19B488090088ABE1 /* TestWebP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65EC541519B4B5DD0088ABE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65EC542019B4B5DD0088ABE1 /* libSTWebP.a */,
+				65EC542219B4B5DD0088ABE1 /* libSTWebP.a */,
+				65EC542419B4B5DD0088ABE1 /* STWebPTests-iOS.xctest */,
+				65EC542619B4B5DD0088ABE1 /* STWebPTests-mac.xctest */,
+				65EC542819B4B5DD0088ABE1 /* STWebPDecoderExample-iOS.app */,
+				65EC542A19B4B5DD0088ABE1 /* STWebPDecoderExample-mac.app */,
+				65EC542C19B4B5DD0088ABE1 /* libwebp.a */,
+				65EC542E19B4B5DD0088ABE1 /* libwebp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65EC52EC19B488090088ABE1 /* TestWebP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65EC531F19B4880A0088ABE1 /* Build configuration list for PBXNativeTarget "TestWebP" */;
+			buildPhases = (
+				65EC52E919B488090088ABE1 /* Sources */,
+				65EC52EA19B488090088ABE1 /* Frameworks */,
+				65EC52EB19B488090088ABE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestWebP;
+			productName = TestWebP;
+			productReference = 65EC52ED19B488090088ABE1 /* TestWebP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65EC52E519B488090088ABE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TWP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Daniel Rodríguez Troitiño";
+			};
+			buildConfigurationList = 65EC52E819B488090088ABE1 /* Build configuration list for PBXProject "TestWebP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65EC52E419B488090088ABE1;
+			productRefGroup = 65EC52EE19B488090088ABE1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 65EC541519B4B5DD0088ABE1 /* Products */;
+					ProjectRef = 65EC541419B4B5DD0088ABE1 /* STWebP.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				65EC52EC19B488090088ABE1 /* TestWebP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		65EC542019B4B5DD0088ABE1 /* libSTWebP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSTWebP.a;
+			remoteRef = 65EC541F19B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542219B4B5DD0088ABE1 /* libSTWebP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSTWebP.a;
+			remoteRef = 65EC542119B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542419B4B5DD0088ABE1 /* STWebPTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "STWebPTests-iOS.xctest";
+			remoteRef = 65EC542319B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542619B4B5DD0088ABE1 /* STWebPTests-mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "STWebPTests-mac.xctest";
+			remoteRef = 65EC542519B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542819B4B5DD0088ABE1 /* STWebPDecoderExample-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "STWebPDecoderExample-iOS.app";
+			remoteRef = 65EC542719B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542A19B4B5DD0088ABE1 /* STWebPDecoderExample-mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "STWebPDecoderExample-mac.app";
+			remoteRef = 65EC542919B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542C19B4B5DD0088ABE1 /* libwebp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwebp.a;
+			remoteRef = 65EC542B19B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65EC542E19B4B5DD0088ABE1 /* libwebp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwebp.a;
+			remoteRef = 65EC542D19B4B5DD0088ABE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65EC52EB19B488090088ABE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EC530919B488090088ABE1 /* Images.xcassets in Resources */,
+				65EC52FB19B488090088ABE1 /* InfoPlist.strings in Resources */,
+				65EC530419B488090088ABE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65EC52E919B488090088ABE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EC530119B488090088ABE1 /* TWPAppDelegate.m in Sources */,
+				65EC530719B488090088ABE1 /* TWPViewController.m in Sources */,
+				65EC52FD19B488090088ABE1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65EC52F919B488090088ABE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65EC52FA19B488090088ABE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65EC530219B488090088ABE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65EC530319B488090088ABE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65EC531D19B4880A0088ABE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65EC531E19B4880A0088ABE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65EC532019B4880A0088ABE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestWebP/TestWebP-Prefix.pch";
+				INFOPLIST_FILE = "TestWebP/TestWebP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65EC532119B4880A0088ABE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestWebP/TestWebP-Prefix.pch";
+				INFOPLIST_FILE = "TestWebP/TestWebP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65EC52E819B488090088ABE1 /* Build configuration list for PBXProject "TestWebP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65EC531D19B4880A0088ABE1 /* Debug */,
+				65EC531E19B4880A0088ABE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65EC531F19B4880A0088ABE1 /* Build configuration list for PBXNativeTarget "TestWebP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65EC532019B4880A0088ABE1 /* Debug */,
+				65EC532119B4880A0088ABE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65EC52E519B488090088ABE1 /* Project object */;
+}

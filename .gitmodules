@@ -1,0 +1,3 @@
+[submodule "Vendor/STWebPDecoder"]
+	path = Vendor/STWebPDecoder
+	url = git@github.com:drodriguez/STWebPDecoder.git
